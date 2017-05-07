@@ -79,3 +79,6 @@ control_logd(system_app)
 # Themes
 allow system_app theme_data_file:dir create_dir_perms;
 allow system_app theme_data_file:file create_file_perms;
+
+# OTAUpdates
+allow system_app media_rw_data_file:dir rw_dir_perms;
