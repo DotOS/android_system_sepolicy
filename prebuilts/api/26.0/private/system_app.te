@@ -90,3 +90,6 @@ read_runtime_log_tags(system_app)
 
 # app domains which access /dev/fuse should not run as system_app
 neverallow system_app fuse_device:chr_file *;
+
+# OTAUpdates
+allow system_app media_rw_data_file:dir rw_dir_perms;
